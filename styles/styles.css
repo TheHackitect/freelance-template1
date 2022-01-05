@@ -9,6 +9,7 @@
 :root {
     /* colors */
     --hamburger-btn-clr: #000;
+    --hamburger-hover-clr: #ff0000;
 
     /* fonts */
     
@@ -84,15 +85,27 @@ center {
 }
 
 .line, 
-line:after, 
-line:before {
+line::after, 
+line::before {
     height: 3px;
     width: 30px;
     background: var(--hamburger-btn-clr);
 }
 
-.line:after,
-.line:before {
+.line.hide {
+    visibility: hidden;
+    transition: 0.3ms ease-in-out;
+}
+
+.line:hover,
+.line::before:hover,
+.line::after:hover {
+    background: var(--hamburger-hover-clr);
+    transform: scale(1.1);
+}
+
+.line::after,
+.line::before {
     content: '';
     position: absolute;
     height: 3px;
@@ -100,12 +113,17 @@ line:before {
     background: var(--hamburger-btn-clr);
 }
 
-.line:before {
+.line::after {
     transform: translateY(8px);
+    transform: rotate(45deg);
 }
 
-.line:after {
+.line::before {
     transform: translateY(-8px);
+}
+
+.rotateHamburger {
+    
 }
 
 /* HERO SECTION */
