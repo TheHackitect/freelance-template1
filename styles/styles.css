@@ -1,0 +1,90 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+    /* colors */
+    --white: #fff;
+    --black: #000;
+    /* fonts */
+    
+    /* font-sizes */
+    
+    /* utilities */
+    
+}
+
+/* GLOBAL STYLES */
+body {
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    
+}
+
+a:visited {
+    
+}
+
+a:hover {
+    
+}
+
+a:active {
+    
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.btn-primary {
+    color: var(--white);
+    background: var(--black);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background: transparent;
+    outline: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-secondary:hover{
+    background: var(--black);
+}
+
+center {
+    max-width: 1200px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+/* HERO SECTION */
+
+/* COMPANY ABOUT SECTION */
+
+/* OWNER BIO SECTION */
+
+/* SERVICES SECTION */
+
+/* INDIVIDUAL SERVICES SECTION */
+
+/* CONTACT SECTION */
+
+/* FAQ SECTION */
+
+/* FOOTER */
