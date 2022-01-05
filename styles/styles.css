@@ -8,8 +8,8 @@
 /* CSS VARIABLES */
 :root {
     /* colors */
-    --white: #fff;
-    --black: #000;
+    --hamburger-btn-clr: #000;
+
     /* fonts */
     
     /* font-sizes */
@@ -72,6 +72,41 @@ center {
 }
 
 /* HEADER */
+/* hamburger button */
+.hamburger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.line, 
+line:after, 
+line:before {
+    height: 3px;
+    width: 30px;
+    background: var(--hamburger-btn-clr);
+}
+
+.line:after,
+.line:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: var(--hamburger-btn-clr);
+}
+
+.line:before {
+    transform: translateY(8px);
+}
+
+.line:after {
+    transform: translateY(-8px);
+}
 
 /* HERO SECTION */
 
