@@ -3,7 +3,6 @@ const line = document.getElementById("line");
 const navLinks = document.getElementById("nav-links");
 
 const toggleMenu = () => {
-    //line.classList.toggle("hide");
     line.classList.toggle("open-hamburger");
     navLinks.classList.toggle("show-links");
 }
