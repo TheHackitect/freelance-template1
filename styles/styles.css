@@ -15,8 +15,10 @@
     
     /* font-sizes */
     
-    /* utilities */
-    
+    /* margin/padding */
+
+    /* transitions */
+    --hamburger-transition: all 0.5ms 
 }
 
 /* GLOBAL STYLES */
@@ -81,49 +83,84 @@ center {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    /* border: 1px solid red; */
 }
 
-.line, 
-line::after, 
-line::before {
+/* @media screen and (min-width: 997px){
+    .hamburger {
+        display: none;
+    }
+} */
+
+.line,
+.line::before,
+.line::after {
     height: 3px;
     width: 30px;
     background: var(--hamburger-btn-clr);
-}
-
-.line.hide {
-    visibility: hidden;
-    transition: 0.3ms ease-in-out;
-}
-
-.line:hover,
-.line::before:hover,
-.line::after:hover {
-    background: var(--hamburger-hover-clr);
-    transform: scale(1.1);
+    transition: all 0.3s ease-in-out; 
 }
 
 .line::after,
 .line::before {
     content: '';
     position: absolute;
-    height: 3px;
-    width: 30px;
-    background: var(--hamburger-btn-clr);
 }
 
 .line::after {
     transform: translateY(8px);
-    transform: rotate(45deg);
 }
 
 .line::before {
     transform: translateY(-8px);
 }
 
-.rotateHamburger {
-    
+.line:hover,
+.line:hover::before,
+.line:hover::after {
+    /* background: var(--hamburger-hover-clr); */
+}
+
+.open-hamburger {
+    background: transparent;
+}
+
+.open-hamburger::before,
+.open-hamurger::after {
+    background: var(--hamburger-btn-clr);
+    transition: all 0.3s ease-in-out;
+}
+
+.open-hamburger::before {
+    transform: rotate(45deg);
+}
+
+.open-hamburger::after {
+    transform: rotate(-45deg);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    border: 2px solid red;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: none;
 }
 
 /* HERO SECTION */
