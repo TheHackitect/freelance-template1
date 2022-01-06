@@ -127,6 +127,8 @@ ul {
 .nav-links {
     transform: translateY(100%);
     transition: var(--transition);
+    height: 100%;
+    padding: 1rem;
 }
 
 .nav-links,
@@ -155,18 +157,17 @@ ul {
     color: var(--link-clr);
     letter-spacing: 1px;
     position: relative;
-    display: block;
     padding: 0 0.5rem;
 }
 
 .nav-link::after {
     content: '';
+    position: absolute;
     height: 2px;
     background: var(--link-hover-clr);
-    position: absolute;
     left: 0;
-    bottom: 0;
-    width: 0;
+    bottom: -8px;
+    width: 100%;
     transition: var(--transition);
 }
 
