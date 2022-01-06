@@ -10,6 +10,9 @@
     /* colors */
     --hamburger-btn-clr: #000;
     --hamburger-hover-clr: #ff0000;
+    --header-background-clr: #363636;
+    --header-text-clr: #fff;
+    --link-clr: #fff;
 
     /* fonts */
     
@@ -17,8 +20,8 @@
     
     /* margin/padding */
 
-    /* transitions */
-    --hamburger-transition: all 0.5ms 
+    /* transitions */;
+    --hamburger-transition: all  
 }
 
 /* GLOBAL STYLES */
@@ -31,11 +34,11 @@ a {
 }
 
 a:link {
-    
+    color: var(--link-clr);
 }
 
 a:visited {
-    
+    color: var(--link-clr);
 }
 
 a:hover {
@@ -43,7 +46,11 @@ a:hover {
 }
 
 a:active {
-    
+    color: var(--link-clr);
+}
+
+ul {
+    list-style-type: none;
 }
 
 .btn {
@@ -68,13 +75,63 @@ a:active {
     background: var(--black);
 }
 
-center {
+.center {
     max-width: 1200px;
     width: 90vw;
     margin: 0 auto;
 }
 
 /* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    padding: 1rem;
+    background: var(--header-background-clr);
+    color: var(--header-text-clr);
+    border: 2px solid redborder
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.company{
+    display: flex;
+    align-items: center;
+    
+}
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    
+    border: 1px solid black;
+}
+
+.company-name {
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: var(--link-clr);
+}
+
 /* hamburger button */
 .hamburger {
     width: 30px;
@@ -85,11 +142,16 @@ center {
     cursor: pointer;
 }
 
-/* @media screen and (min-width: 997px){
+@media screen and (min-width: 997px){
     .hamburger {
         display: none;
     }
-} */
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+}
 
 .line,
 .line::before,
@@ -138,31 +200,6 @@ center {
     transform: rotate(-45deg);
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 75px;
-    border: 2px solid red;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.company-logo {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links {
-    display: none;
-}
-
 /* HERO SECTION */
 
 /* COMPANY ABOUT SECTION */
@@ -177,4 +214,4 @@ center {
 
 /* FAQ SECTION */
 
-/* FOOTER */
+/* FOOTER */}}}}
