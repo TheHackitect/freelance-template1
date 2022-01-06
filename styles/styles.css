@@ -13,6 +13,7 @@
     --header-background-clr: #363636;
     --header-text-clr: #fff;
     --link-clr: #fff;
+    --link-hover-clr: #ff0000;
 
     /* fonts */
     
@@ -153,6 +154,24 @@ ul {
     font-size: 2rem;
     color: var(--link-clr);
     letter-spacing: 1px;
+    position: relative;
+    display: block;
+    padding: 0 0.5rem;
+}
+
+.nav-link::after {
+    content: '';
+    height: 2px;
+    background: var(--link-hover-clr);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: 100%
 }
 
 /* hamburger button */
@@ -255,4 +274,4 @@ ul {
 
 /* FAQ SECTION */
 
-/* FOOTER */
+/* FOOTER */}}
