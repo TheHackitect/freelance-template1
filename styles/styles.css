@@ -15,24 +15,29 @@
     --link-clr: #fff;
     --link-hover-clr: #ff0000;
     --footer-background-clr: #1b1b1b;
+    --footer-heading-clr: #fffafac7;
+    --footer-link-clr: #fffafa;
+    --underline-clr: #f0d229;
 
     /* fonts */
+    --body-font: 'Roboto', sans-serif;
     
     /* font-sizes */
     
     /* margin/padding */
 
-    /* transitions */;
-    --transition: all 0.3s ease-in-out;  
+    /* transitions */
+    --transition: all 0.3ms ease-in-out;
 }
 
 /* GLOBAL STYLES */
 body {
-    
+    font-family: var(--body-font);
 }
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 a:link {
@@ -93,7 +98,6 @@ ul {
     height: 75px;
     padding: 1rem;
     background: var(--header-background-clr);
-    color: var(--header-text-clr);
 }
 
 .nav {
@@ -123,6 +127,7 @@ ul {
     margin-left: 0.5rem;
     font-size: 1.4rem;
     font-weight: bold;
+    color: var(--header-text-clr);
 }
 
 .nav-links {
@@ -279,4 +284,54 @@ ul {
 /* FOOTER */
 .footer {
     background: var(--footer-background-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    padding: 1rem;
+}
+
+.footer-heading {
+    color: var(--footer-heading-clr);
+    position: relative;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    background: var(--underline-clr);
+    height: 2px;
+    width: 40px;
+    left: 0;
+    bottom: -5px;
+}
+
+.footer-link {
+    padding: 0.5rem 0;
+    color: var(--footer-link-clr);
+}
+
+.copyright {
+    color: var(--footer-heading-clr);
+    text-align: center;
+}
+
+.footer-attrition {
+    display: inline-block;
+}
+
+.footer .company {
+    justify-content: center;
 }

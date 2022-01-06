@@ -7,7 +7,7 @@
     <meta name="author" content="Natasha Johnson" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="icon" type="image/png"  href="" />
+    <link rel="icon" type="image/png" href="" />
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -16,12 +16,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- add google fonts link here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="scripts/script.js" defer></script>
   </head>
   <body>
-
     <!-- header -->
     <header class="header">
       <nav class="nav center">
@@ -49,55 +53,61 @@
 
     <!-- main -->
     <main class="main">
+      <!-- hero section -->
+      <section class="hero" id="hero">
+        <div class="hero_wrapper center"></div>
+      </section>
 
-        <!-- hero section -->
-        <section class="hero" id="hero">
-            <div class="hero_wrapper center">
+      <!-- about section -->
+      <section class="about"></section>
 
-            </div>
-        </section>
+      <!-- services section -->
+      <section class="services"></section>
 
-        <!-- about section -->
-        <section class="about"></section>
-
-        <!-- services section -->
-        <section class="services"></section>
-
-        <!-- contact section -->
-        <section class="contact"></section>
+      <!-- contact section -->
+      <section class="contact"></section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
-        <div class="footer-container center">
-            <ul class="footer-links">
-            <h4 class="footer-heading">Heading</h4>
-            <li><a href="" class="footer-link">Link</a></li>
-            <li><a href="" class="footer-link">Link</a></li>
-            <li><a href="" class="footer-link">Link</a></li>
-        </ul>
-        <ul class="footer-links">
-            <h4 class="footer-heading">Heading</h4>
-            <li><a href="" class="footer-link">Link</a></li>
-            <li><a href="" class="footer-link">Link</a></li>
-            <li><a href="" class="footer-link">Link</a></li>
-        </ul>
-        <ul class="footer-links">
-            <h4 class="footer-heading">Heading</h4>
-            <li><a href="" class="footer-link">Link</a></li>
-            <li><a href="" class="footer-link">Link</a></li>
-            <li><a href="" class="footer-link">Link</a></li>
-        </ul>
+      <div class="footer-container center">
         <div class="company">
-            <img
-              src="https://via.placeholder.com/40C/O https://placeholder.com/"
-              class="company-logo"
-              alt="image of company logo"
-            />
-            <p class="company-name">Company Name</p>
+          <img
+            src="https://via.placeholder.com/40C/O https://placeholder.com/"
+            class="company-logo"
+            alt="image of company logo"
+          />
+          <p class="company-name">Company Name</p>
         </div>
-        </div>
-        <small class="copyright">Copyright <span class="date"></span> Company Name | All Rights Reserved | Website Created By: <a href="https://natashajohnson.dev/" class="footer-attrition" target="_blank">Natasha Johnson</a></small>
+        <ul class="footer-links">
+          <h4 class="footer-heading">Heading</h4>
+          <li><a href="" class="footer-link">Link</a></li>
+          <li><a href="" class="footer-link">Link</a></li>
+          <li><a href="" class="footer-link">Link</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footer-heading">Heading</h4>
+          <li><a href="" class="footer-link">Link</a></li>
+          <li><a href="" class="footer-link">Link</a></li>
+          <li><a href="" class="footer-link">Link</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footer-heading">Heading</h4>
+          <li><a href="" class="footer-link">Link</a></li>
+          <li><a href="" class="footer-link">Link</a></li>
+          <li><a href="" class="footer-link">Link</a></li>
+        </ul>
+      </div>
+      <small class="copyright"
+        >&copy; <span class="date"></span> Company Name | All Rights Reserved |
+        Website Created By:
+        <a
+          href="https://natashajohnson.dev/"
+          class="footer-attrition"
+          target="_blank"
+          >Natasha Johnson</a
+        ></small
+      >
     </footer>
   </body>
 </html>
