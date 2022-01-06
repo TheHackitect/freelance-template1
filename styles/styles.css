@@ -233,6 +233,9 @@ ul {
 }
 
 /* HERO SECTION */
+.hero {
+    height: calc(100vh - 75px);
+}
 
 /* COMPANY ABOUT SECTION */
 
