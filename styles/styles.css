@@ -109,7 +109,7 @@ ul {
 
 /* back to top button */
 .scroll {
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 60px;
 }
