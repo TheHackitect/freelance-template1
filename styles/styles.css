@@ -14,6 +14,7 @@
     --header-text-clr: #fff;
     --link-clr: #fff;
     --link-hover-clr: #ff0000;
+    --footer-background-clr: #1b1b1b;
 
     /* fonts */
     
@@ -167,7 +168,7 @@ ul {
     background: var(--link-hover-clr);
     left: 0;
     bottom: -8px;
-    width: 100%;
+    width: 0;
     transition: var(--transition);
 }
 
@@ -275,4 +276,7 @@ ul {
 
 /* FAQ SECTION */
 
-/* FOOTER */}}
+/* FOOTER */
+.footer {
+    background: var(--footer-background-clr);
+}
