@@ -21,7 +21,7 @@
     /* margin/padding */
 
     /* transitions */;
-    --hamburger-transition: all  
+    --transition: all 0.3s ease-in-out;  
 }
 
 /* GLOBAL STYLES */
@@ -92,29 +92,28 @@ ul {
     padding: 1rem;
     background: var(--header-background-clr);
     color: var(--header-text-clr);
-    border: 2px solid redborder
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
+    
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .company{
     display: flex;
     align-items: center;
-    
 }
 
 .company-logo {
     width: 40px;
-    height: 40px;
     -o-object-fit: cover;
        object-fit: cover;
-    
-    border: 1px solid black;
 }
 
 .company-name {
@@ -124,12 +123,32 @@ ul {
 }
 
 .nav-links {
+    /* height: 500px; */
     display: none;
+    transition: var(--transition);
+    /* border: 1px solid white; */
+}
+
+.show-links {
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    color: red;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background-color: var(--header-background-clr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: var(--transition);
 }
 
 .nav-link {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--link-clr);
+    letter-spacing: 1px;
 }
 
 /* hamburger button */
@@ -143,6 +162,12 @@ ul {
 }
 
 @media screen and (min-width: 997px){
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
     .hamburger {
         display: none;
     }
@@ -150,6 +175,10 @@ ul {
     .nav-links {
         display: flex;
         gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
     }
 }
 
@@ -159,7 +188,7 @@ ul {
     height: 3px;
     width: 30px;
     background: var(--hamburger-btn-clr);
-    transition: all 0.3s ease-in-out; 
+    transition: var(--transition);
 }
 
 .line::after,
@@ -189,7 +218,7 @@ ul {
 .open-hamburger::before,
 .open-hamurger::after {
     background: var(--hamburger-btn-clr);
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
 }
 
 .open-hamburger::before {
@@ -214,4 +243,4 @@ ul {
 
 /* FAQ SECTION */
 
-/* FOOTER */}}}}
+/* FOOTER */
