@@ -123,17 +123,15 @@ ul {
 }
 
 .nav-links {
-    /* height: 500px; */
-    display: none;
+    transform: translateY(100%);
     transition: var(--transition);
-    /* border: 1px solid white; */
 }
 
+.nav-links,
 .show-links {
     position:fixed;
     display: flex;
     flex-direction: column;
-    color: red;
     top: 75px;
     left: 0;
     width: 100%;
@@ -143,6 +141,11 @@ ul {
     justify-content: center;
     gap: 2rem;
     transition: var(--transition);
+    overflow: hidden;
+}
+
+.show-links {
+    transform: translateY(0);
 }
 
 .nav-link {
