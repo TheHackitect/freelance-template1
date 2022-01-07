@@ -443,7 +443,7 @@ ul {
 .about {
     /* min-height: 100vh; */
     background: var(--off-white);
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .about-section {
@@ -457,7 +457,7 @@ ul {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
