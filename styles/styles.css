@@ -196,7 +196,7 @@ ul {
     position: fixed;
     right: 10px;
     bottom: 60px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .scroll-btn {
@@ -232,9 +232,9 @@ ul {
     z-index: 1;
 }
 
-.sticky {
+/* .sticky {
     height: 60px;
-}
+} */
 
 .nav {
     width: 100%;
@@ -285,16 +285,18 @@ ul {
     position:fixed;
     display: flex;
     flex-direction: column;
-    top: 75px;
+    top: 60px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 60px);
+    height: 100%;
     background-color: var(--header-background-clr);
     align-items: center;
     justify-content: center;
     gap: 2rem;
     transition: var(--transition);
     overflow: hidden;
+    z-index: 2;
 }
 
 .show-links {
