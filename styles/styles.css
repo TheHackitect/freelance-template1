@@ -46,6 +46,7 @@ body {
     font-family: var(--body-font);
     position: relative;
     color: var(--body-font-clr);
+    /* width: 100%; */
 }
 
 a {
@@ -151,7 +152,7 @@ ul {
 }
 
 .title {
-    margin: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
     position: relative;
@@ -227,6 +228,7 @@ ul {
     background: var(--header-background-clr);
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1;
 }
 
@@ -236,6 +238,9 @@ ul {
 
 .nav {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-wrapper {
@@ -386,13 +391,14 @@ ul {
 .open-hamburger::after {
     transform: rotate(-45deg);
 }
-/* 
+
 .main {
     position: relative;
-} */
+}
+
 /* HERO SECTION */
 .hero {
-    min-height: 60vh;
+    min-height: 80vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -443,7 +449,7 @@ ul {
 .about {
     /* min-height: 100vh; */
     background: var(--off-white);
-    padding: 4rem;
+    padding: 4rem 0;
 }
 
 .about-section {
@@ -451,7 +457,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    /* align-content: center; */
 }
 
 .cards {
@@ -466,7 +472,7 @@ ul {
     flex-direction: column;
     padding: 1rem;
     background: var(--white);
-    min-width: 350px;
+    min-width: 325px;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0px 10px rgba(0,0, 0, 0.3);
