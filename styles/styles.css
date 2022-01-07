@@ -22,16 +22,17 @@
     --accent-clr-opacity: rgb(240, 210, 41);
     --scrollbar-track-clr: #1b1b1b;
     --scrollbar-border-clr: #808080;
+    --body-font-clr: #1b1b1b;
 
-    /* typography */
+    /* typography */;
     --body-font: 'Roboto', sans-serif;
     
     /* font-sizes */
     
     /* margin/padding */
 
-    /* transitions */
-    --transition: all 0.3s ease-in-out;
+    /* transitions */;
+    --transition: all 0.3s ease-in-out
 }
 
 /* GLOBAL STYLES */
@@ -42,6 +43,7 @@ html{
 body {
     font-family: var(--body-font);
     position: relative;
+    color: var(--body-font-clr);
 }
 
 a {
@@ -419,6 +421,14 @@ ul {
 }
 
 /* COMPANY ABOUT SECTION */
+.about {
+    border: 2px solid green;
+    min-height: 100vh;
+}
+
+.about-section {
+    display: flex;
+}
 
 /* OWNER BIO SECTION */
 
@@ -500,5 +510,4 @@ ul {
     flex-shrink: 0;
      min-width: 250px;
      padding: 1.5rem;
-}
 }

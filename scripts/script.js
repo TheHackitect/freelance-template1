@@ -3,6 +3,7 @@ const line = document.getElementById("line");
 const navLinks = document.getElementById("nav-links");
 const scrollBtn = document.getElementById("scroll");
 const header = document.querySelector(".header");
+const date = document.querySelector(".date");
 
 const toggleMenu = () => {
     line.classList.toggle("open-hamburger");
@@ -24,5 +25,8 @@ window.onscroll = function () {
 scrollBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
+
+const currentDate = new Date().getFullYear();
+date.textContent = currentDate;
 
 hamburgerBtn.addEventListener("click", toggleMenu);
