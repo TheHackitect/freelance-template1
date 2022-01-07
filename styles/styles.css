@@ -20,16 +20,17 @@
     --underline-clr: #f0d229;
     --accent-clr: #f0d229;
     --accent-clr-opacity: rgb(240, 210, 41);
+    --scrollbar-track-clr: #1b1b1b;
 
-    /* fonts */
-   --body-font: 'Roboto', sans-serif;
+    /* typography */
+    --body-font: 'Roboto', sans-serif;
     
     /* font-sizes */
     
     /* margin/padding */
 
-    /* transitions */;
-   --transition: all 0.3s ease-in-out;
+    /* transitions */
+    --transition: all 0.3s ease-in-out;
 }
 
 /* GLOBAL STYLES */
@@ -109,6 +110,27 @@ ul {
 }
 
 /* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 1vw;
+} 
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  border: 1px solid gray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-clr);
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+} 
 
 /* back to top button */
 .scroll {
@@ -149,7 +171,6 @@ ul {
 
 .nav {
     width: 100%;
-    
 }
 
 .nav-wrapper {
@@ -384,4 +405,3 @@ ul {
      min-width: 250px;
      padding: 1.5rem;
 }
-
