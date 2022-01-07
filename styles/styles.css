@@ -8,7 +8,7 @@
 /* CSS VARIABLES */
 :root {
     /* colors */
-    --hamburger-btn-clr: #000;
+    --hamburger-btn-clr: #fff;
     --hamburger-hover-clr: #ff0000;
     --header-background-clr: #363636;
     --header-text-clr: #fff;
@@ -21,6 +21,7 @@
     --accent-clr: #f0d229;
     --accent-clr-opacity: rgb(240, 210, 41);
     --scrollbar-track-clr: #1b1b1b;
+    --scrollbar-border-clr: #808080;
 
     /* typography */
     --body-font: 'Roboto', sans-serif;
@@ -195,7 +196,7 @@ ul {
     margin-left: 0.5rem;
     font-size: 1.4rem;
     font-weight: bold;
-    color: var(--header-text-clr);
+    color: var(--accent-clr);
     letter-spacing: 1px;
 }
 
@@ -296,7 +297,8 @@ ul {
 .line:hover,
 .line:hover::before,
 .line:hover::after {
-    background: var(--hamburger-hover-clr); 
+    /* background: var(--hamburger-hover-clr); */
+    transition: var(--transition); 
 }
 
 .open-hamburger {
