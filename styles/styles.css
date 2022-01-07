@@ -23,6 +23,8 @@
     --scrollbar-track-clr: #1b1b1b;
     --scrollbar-border-clr: #808080;
     --body-font-clr: #1b1b1b;
+    --white: #fff;
+    --off-white: #fffafa;
 
     /* typography */;
     --body-font: 'Roboto', sans-serif;
@@ -92,10 +94,6 @@ ul {
     font-weight: bold;
 }
 
-.btn:hover {
-    
-}
-
 .btn-primary {
     color: var(--white);
     background: var(--accent-clr);
@@ -150,6 +148,12 @@ ul {
     max-width: 1200px;
     width: 90vw;
     margin: 0 auto;
+}
+
+.title {
+    margin: 2rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 /* custom scrollbar */
@@ -417,17 +421,55 @@ ul {
 }
 
 .custom-shape-divider-bottom-1641522960 .shape-fill {
-    fill: white;
+    fill: var(--off-white);
 }
 
 /* COMPANY ABOUT SECTION */
 .about {
-    border: 2px solid green;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    background: var(--off-white);
+    padding: 2rem;
 }
 
 .about-section {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--white);
+    min-width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.card .card-link {
+    color: var(--body-font-clr);
+    align-self: center;
+}
+
+@media screen and (min-width: 992px){
+    .cards {
+        flex-direction: row;
+    }
 }
 
 /* OWNER BIO SECTION */
