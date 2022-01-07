@@ -81,10 +81,6 @@ a:active {
     color: var(--link-clr);
 }
 
-a:target {
-    color: var(--accent-clr);
-}
-
 ul {
     list-style-type: none;
 }
@@ -273,6 +269,10 @@ ul {
     transition: var(--transition);
     height: 100%;
     padding: 1rem;
+}
+
+.nav-links .current {
+    color: var(--accent-clr);
 }
 
 .nav-links,
