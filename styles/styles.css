@@ -188,7 +188,7 @@ ul {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: red;
+  background: white;
 } 
 
 /* back to top button */
@@ -307,7 +307,7 @@ ul {
     font-size: 2rem;
     color: var(--link-clr);
     position: relative;
-    padding: 0 0.5rem;
+    /* padding: 0 0.5rem; */
 }
 
 /* hamburger button */
@@ -334,7 +334,7 @@ ul {
     .nav-links {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 2rem;
         position: static;
         transform: translateY(0);
         height: 100%;
