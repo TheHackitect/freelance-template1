@@ -98,7 +98,7 @@ ul {
 .btn-primary {
     color: var(--white);
     background: var(--accent-clr);
-    color: var(--white);
+    color: var(--black);
     border: none;
     position: relative;
 }
@@ -136,7 +136,7 @@ ul {
 .btn-secondary {
     background: transparent;
     /* outline: none; */
-    border: 2px solid black;
+    border: 2px solid white;
     color: var(--white)
 }
 
@@ -405,6 +405,7 @@ ul {
     display: flex;
     align-items: center;
     background: gray;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
 }
 
 .hero-content {
@@ -417,6 +418,11 @@ ul {
 
 .hero-heading {
     font-size: 3rem;
+    color: white;
+}
+
+.hero-text {
+    color: white;
 }
 
 .hero-btns {
