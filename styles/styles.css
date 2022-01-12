@@ -25,7 +25,8 @@
     --body-font-clr: #1b1b1b;
     --white: #fff;
     --off-white: #fffafa;
-
+    --red: #ff0000;
+    
     /* typography */;
     --body-font: 'Roboto', sans-serif;
     
@@ -458,6 +459,7 @@ ul {
     /* min-height: 100vh; */
     background: var(--off-white);
     padding: 4rem 0;
+    border: 1px solid orange;
 }
 
 .about-section {
@@ -509,7 +511,84 @@ ul {
 /* INDIVIDUAL SERVICES SECTION */
 
 /* CONTACT SECTION */
+.contact {
+    padding: 4rem 0;
+    display: flex;
+    background: var(--header-background-clr);
+    color: var(--header-text-clr);
+}
 
+.contact-section {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    align-self: center;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.form-heading {
+    color: var(--accent-clr);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.form-label {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-input:focus {
+    outline-color: var(--accent-clr);
+}
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+.form-btn {
+    background: var(--accent-clr);
+    align-self: flex-start;
+    color: black;
+    border-color: black;
+}
+
+.highlight {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.form-disclosure {
+    padding: 1rem 0;
+}
 /* FAQ SECTION */
 
 /* FOOTER */
@@ -582,4 +661,4 @@ ul {
     flex-shrink: 0;
      min-width: 250px;
      padding: 1.5rem;
-}
+}}}}
