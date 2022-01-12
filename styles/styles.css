@@ -459,7 +459,6 @@ ul {
     /* min-height: 100vh; */
     background: var(--off-white);
     padding: 4rem 0;
-    border: 1px solid orange;
 }
 
 .about-section {
@@ -569,16 +568,18 @@ ul {
     margin: 1rem 0;
 }
 
+.disclosure-container .form-label {
+    padding: 0;
+}
+
 input[type="checkbox"] {
     width: 25px;
     height: 25px;
 }
 
 .form-btn {
-    background: var(--accent-clr);
     align-self: flex-start;
-    color: black;
-    border-color: black;
+    color: var(--body-font-clr);
 }
 
 .highlight {
@@ -661,4 +662,4 @@ input[type="checkbox"] {
     flex-shrink: 0;
      min-width: 250px;
      padding: 1.5rem;
-}}}}
+}
