@@ -524,12 +524,20 @@ ul {
     align-items: center;
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid blue;
+   
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     width: 100%;
-    align-self: center;
+    /* align-self: center; */
     margin: 0 auto;
     gap: 1rem;
     padding: 1rem;
@@ -589,6 +597,33 @@ input[type="checkbox"] {
 
 .form-disclosure {
     padding: 1rem 0;
+}
+
+.contact-connect {
+    border: 1px solid red;
+    padding: 1rem;
+}
+
+.connect-heading {
+    padding: 1rem 0;
+}
+
+.map {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.map iframe {
+    width: 100%;
+    -o-object-fit: center;
+       object-fit: center;
+}
+
+@media screen and (min-width: 992px){
+    .connect-heading,
+    .contact-form {
+        padding: 1rem;
+    }
 }
 /* FAQ SECTION */
 
