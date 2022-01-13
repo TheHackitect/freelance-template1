@@ -472,6 +472,7 @@ ul {
 .cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
 }
@@ -529,18 +530,20 @@ ul {
     flex-direction: column;
     width: 100%;
     border: 2px solid blue;
-   
+    /* flex-wrap: wrap; */
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    /* max-width: 500px; */
     width: 100%;
     /* align-self: center; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     gap: 1rem;
     padding: 1rem;
+    border: 1px solid white;
+    flex-basis: 50%;
 }
 
 .form-heading {
@@ -602,6 +605,8 @@ input[type="checkbox"] {
 .contact-connect {
     border: 1px solid red;
     padding: 1rem;
+    width: 100%;
+    flex-basis: 50%;
 }
 
 .connect-heading {
@@ -621,6 +626,10 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 992px){
+    .contact-container {
+        flex-direction: row;
+    }
+    
     .connect-heading,
     .contact-form {
         padding: 1rem;
