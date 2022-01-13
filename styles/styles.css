@@ -180,7 +180,7 @@ ul {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: white;
+  background:rgba(240, 210, 41, 0.8);
 } 
 
 /* back to top button */
