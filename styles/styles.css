@@ -606,6 +606,110 @@ ul {
     outline-color: var(--accent-clr);
 }
 
+textarea::-webkit-input-placeholder{
+    font-family: var(--body-font);
+}
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+textarea::-moz-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+textarea:-ms-input-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+textarea::-ms-input-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+textarea::-webkit-input-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+textarea::placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+::-moz-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+:-ms-input-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+::-ms-input-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+::-webkit-input-placeholder
+
+.disclosure-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+::placeholder
+
 .disclosure-container {
     display: flex;
     flex-direction: row;
@@ -788,3 +892,4 @@ input[type="checkbox"] {
      min-width: 250px;
      padding: 1.5rem;
 } 
+}
