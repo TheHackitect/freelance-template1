@@ -836,3 +836,48 @@ input[type="checkbox"] {
      min-width: 250px;
      padding: 1.5rem;
 } 
+
+/* ABOUT PAGE */
+/* half hero section */
+.half-hero {
+    position: relative;
+    min-height: 300px;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-hero .title {
+    transform: translateY(100%);
+}
+
+/* bio section */
+.bio {
+    /* position: relative; */
+    border: 2px solid blue;
+}
+
+.bio-section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bio-img {
+    width: 100%;
+}
+
+.bio-text {
+   line-height: 1.5; 
+}
+
+.bio-heading {
+    text-align: center;
+}
+
+.bio-description {
+    margin: 1rem 0;
+    text-indent: 2rem;
+}
