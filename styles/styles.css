@@ -642,11 +642,28 @@ input[type="checkbox"] {
     width: 100%;
     flex-basis: 50%;
     /* text-align: right; */
+    line-height: 1.75;
+}
+
+.contact-connect .contact-btn {
+    margin-top: 2rem;
 }
 
 .connect-heading {
     padding: 1rem 0;
     letter-spacing: 1px;
+}
+
+.connect-link {
+    color: var(--link-clr);
+}
+
+.connect-link:visited {
+    color: var(--link-clr);
+}
+
+.connect-hours {
+    /* line-height: 2; */
 }
 
 .map {
