@@ -940,9 +940,52 @@ input[type="checkbox"] {
 }
 
 /* SERVICES PAGE */
+/* services */
 .services {
     min-height: 100vh;
-   
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.services-image {
+    height: 400px;
+    background: url(../images/hero.jpg) no-repeat center / cover;
+    max-width: 400px;
+    width: 90vw;
+}
+
+.services-description {
+    background: lightblue;
+    margin-top: -200px;
+    margin-left: 75px;
+    max-width: 400px;
+    width: 80%;
+    padding: 1rem;
+}
+
+.services-name {
+    margin-bottom: 2rem;
+}
+
+.services-text {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px){
+    .services-container {
+      border: 2px solid red;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 }
 
 /* faq section */
@@ -1023,4 +1066,4 @@ input[type="checkbox"] {
     .accordian {
         justify-content: flex-start;
     }
-}}
+}
