@@ -10,10 +10,12 @@ const toggleMenu = () => {
     navLinks.classList.toggle("show-links");
 }
 
+// sticky header
 window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+// scroll to top
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 70) {
     scrollBtn.style.display = "block";

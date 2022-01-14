@@ -13,7 +13,7 @@
     --header-background-clr: #363636;
     --header-text-clr: #fff;
     --link-clr: #fff;
-    --link-hover-clr: #ff0000;
+    --link-hover-clr: #f0d229;
     --footer-background-clr: #1b1b1b;
     --footer-heading-clr: #fffafac7;
     --footer-link-clr: #fffafa;
@@ -418,6 +418,14 @@ ul {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
+}
+
+.hero-btn:hover {
+    color: black;
+}
+
+.hero-btn:hover::after {
+    width: 0;
 }
 
 .custom-shape-divider-bottom-1641522960 {
@@ -934,4 +942,8 @@ input[type="checkbox"] {
         flex-direction: row-reverse;
     }
 }
+
+/* SERVICES PAGE */
+.services {
+    min-height: 100vh;
 }
