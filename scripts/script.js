@@ -4,6 +4,7 @@ const navLinks = document.getElementById("nav-links");
 const scrollBtn = document.getElementById("scroll");
 const header = document.querySelector(".header");
 const date = document.querySelector(".date");
+const accordians = document.getElementsByClassName("accordian-icon");
 
 const toggleMenu = () => {
     line.classList.toggle("open-hamburger");
@@ -28,7 +29,17 @@ scrollBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
+//dynamic date
 const currentDate = new Date().getFullYear();
 date.textContent = currentDate;
+
+// accordian
+for (let i = 0; i < accordians.length; i++){
+  console.log("we here");
+  accordians[i].addEventListener("click", function () {
+    this.parentElement.nextElementSibling.classList.toggle("show-accordian")
+  })
+}
+
 
 hamburgerBtn.addEventListener("click", toggleMenu);

@@ -998,3 +998,9 @@ input[type="checkbox"] {
     height: 0;
     opacity: 0;
 }
+
+.show-accordian {
+    height: auto;
+    opacity: 1;
+    transition: var(--transition);
+}
