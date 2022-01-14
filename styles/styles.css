@@ -949,8 +949,18 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     justify-content: center;
+}
+
+.services-mission {
+    max-width: 600px;
+    width: 90vw;
+    margin: 0 auto;
+    background: var(--accent-clr);
+    padding: 2rem;
+    text-align: left;
+    box-shadow: var(--box-shadow);
 }
 
 .services-container {
