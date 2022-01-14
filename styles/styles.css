@@ -942,4 +942,59 @@ input[type="checkbox"] {
 /* SERVICES PAGE */
 .services {
     min-height: 100vh;
+   
+}
+
+/* faq section */
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blue;
+    padding: 2rem;
+    gap: 1rem;
+}
+.accordian {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 600px;
+    width: 100%;
+}
+
+.accordian-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    background: var(--accent-clr);
+    color: black;
+    font-size: 1.5rem;
+    border: none;
+    /* margin-right: 2rem; */
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordian-icon:hover {
+    border: 2px solid black;
+}
+
+.accordian-question {
+    /* border: 1px solid black; */
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.accordian-answer {
+    max-width: 600px;
+    padding-left: 1rem;
+    border-left: 1px solid gray;
+    margin-left: 1.3rem;
+    transition: var(--transition);
+    height: 0;
+    opacity: 0;
 }
