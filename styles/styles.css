@@ -950,37 +950,41 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid blue;
     padding: 2rem;
     gap: 1rem;
 }
 .accordian {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: flex-start;
     max-width: 600px;
     width: 100%;
+    /* border: 1px solid green; */
 }
 
 .accordian-icon {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px;  */
     border-radius: 50%;
     outline: none;
-    background: var(--accent-clr);
+    /* background: var(--accent-clr); */
     color: black;
     font-size: 1.5rem;
     border: none;
-    /* margin-right: 2rem; */
+    /* margin-right: 1rem; */
     cursor: pointer;
     transition: var(--transition);
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
+    display: inline-block;
+
 }
 
 .accordian-icon:hover {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    color: var(--accent-clr);
 }
 
 .accordian-question {
@@ -989,14 +993,19 @@ input[type="checkbox"] {
     border-radius: 2rem;
 }
 
+.accordian-active {
+    /* background: var(--accent-clr); */
+}
+
 .accordian-answer {
     max-width: 600px;
     padding-left: 1rem;
-    border-left: 1px solid gray;
+    border-left: 1px solid var(--accent-clr);
     margin-left: 1.3rem;
     transition: var(--transition);
     height: 0;
     opacity: 0;
+    justify-content: center;
 }
 
 .show-accordian {
@@ -1004,3 +1013,14 @@ input[type="checkbox"] {
     opacity: 1;
     transition: var(--transition);
 }
+
+.services-cta {
+    background: lightgray;
+}
+
+/* media queries */
+@media screen and (min-width: 768px){
+    .accordian {
+        justify-content: flex-start;
+    }
+}}
