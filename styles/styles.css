@@ -761,10 +761,6 @@ input[type="checkbox"] {
         align-self: flex-end;
         width: auto;
     }
-    
-    .contact-form {
-        padding: 1rem;
-    }
 
     .connect-heading:not(:first-child) {
         padding-top: 3rem;
