@@ -447,7 +447,30 @@ ul {
     min-height: 100vh;
     background: var(--off-white);
     padding: 4rem 0;
-    
+    height: 100%;
+}
+
+.mission {
+    /* display: flex; */
+}
+
+.mission-statement {
+    max-width: 600px;
+    line-height: 1.5;
+    position: relative;
+    /* display: block; */
+    margin: 5rem auto;
+    padding: 0.5rem;
+}
+
+.mission-statement::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content:'\f10d';
+    position: absolute;
+    font-size: 3rem;
+    top: -55px;
+    left: -35px;
 }
 
 .about-section {
@@ -793,7 +816,7 @@ input[type="checkbox"] {
 }
 
 .footer-heading::after {
-    content: '';
+    content: '';;
     position: absolute;
     background: var(--underline-clr);
     height: 2px;
@@ -878,12 +901,14 @@ input[type="checkbox"] {
 }
 
 .bio-img img {
-    width: 100%;
+    /* width: 100%; */
     /* height: 100%; */
 }
 
 .bio-text {
    line-height: 1.5; 
+   display: flex;
+   flex-direction: column;
 }
 
 .bio-heading {
@@ -895,6 +920,11 @@ input[type="checkbox"] {
     text-indent: 2rem;
 }
 
+.bio-btn {
+    align-self: center;
+    margin-top: 2rem;
+}
+
 @media screen and (min-width: 992px){
     .bio-section {
         flex-direction: row;
@@ -903,4 +933,5 @@ input[type="checkbox"] {
     .bio-section:nth-of-type(even){
         flex-direction: row-reverse;
     }
+}
 }
