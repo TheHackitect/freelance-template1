@@ -37,8 +37,9 @@
 
     /* transitions */;
     --transition: all 0.3s ease-in-out;
+    --accordian-transition: all 0.3s ease-in;
     
-    /* utilities */
+    /* utilities */;
     --box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -1034,13 +1035,13 @@ input[type="checkbox"] {
     border: none;
     /* margin-right: 1rem; */
     cursor: pointer;
-    transition: var(--transition);
+    /* transition: var(--transition); */
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
     display: inline-block;
-
+    /* transition: var(--accordian-transition); */
 }
 
 .accordian-icon:hover {
@@ -1063,16 +1064,21 @@ input[type="checkbox"] {
     padding-left: 1rem;
     border-left: 1px solid var(--accent-clr);
     margin-left: 1.3rem;
-    transition: var(--transition);
+    /* transition: var(--transition); */
     max-height: 0;
-    opacity: 0;
+    /* opacity: 0; */
     justify-content: center;
+    /* transition: (--accordian-transition); */
+    overflow: hidden;
+    transition: max-height 1s ease-out;
 }
 
 .show-accordian {
     max-height: 300px;
-    opacity: 1;
-    transition: var(--transition);
+    /* opacity: 1; */
+    /* transition: var(--transition); */
+    transition: (--accordian-transition);
+    transition: max-height 1s ease-in;
 }
 
 .services-cta {
