@@ -1056,7 +1056,7 @@ input[type="checkbox"] {
 }
 
 .accordian-active {
-    /* background: var(--accent-clr); */
+    text-shadow: var(--accent-clr);
 }
 
 .accordian-answer {
@@ -1064,20 +1064,14 @@ input[type="checkbox"] {
     padding-left: 1rem;
     border-left: 1px solid var(--accent-clr);
     margin-left: 1.3rem;
-    /* transition: var(--transition); */
     max-height: 0;
-    /* opacity: 0; */
     justify-content: center;
-    /* transition: (--accordian-transition); */
     overflow: hidden;
     transition: max-height 1s ease-out;
 }
 
 .show-accordian {
     max-height: 300px;
-    /* opacity: 1; */
-    /* transition: var(--transition); */
-    transition: (--accordian-transition);
     transition: max-height 1s ease-in;
 }
 

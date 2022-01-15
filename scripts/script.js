@@ -5,6 +5,8 @@ const scrollBtn = document.getElementById("scroll");
 const header = document.querySelector(".header");
 const date = document.querySelector(".date");
 const accordians = document.getElementsByClassName("accordian-icon");
+const minus = document.querySelector(".fa-minus");
+const plus = document.querySelector(".fa-plus");
 
 const toggleMenu = () => {
     line.classList.toggle("open-hamburger");
@@ -38,7 +40,9 @@ for (let i = 0; i < accordians.length; i++){
   console.log("we here");
   accordians[i].addEventListener("click", function () {
     this.nextElementSibling.classList.toggle("accordian-active");
-    this.parentElement.nextElementSibling.classList.toggle("show-accordian")
+    this.parentElement.nextElementSibling.classList.toggle("show-accordian");
+    minus.classList.toggle("show");
+    plus.classList.toggle("hide");
   })
 }
 
